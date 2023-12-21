@@ -175,6 +175,7 @@ console.log(clean([0, 1, false, 2, undefined, '', 3, null]));
 // todo Напишіть функцію updateObject, яка приймає об'єкт і повертає новий об'єкт без вказаних параметрів
 // Результат, що очікується ({a: 1, b: 2, c: 3}, 'b', 'a') => {c: 3}
 function updateObject(obj, ...args) {
+  debugger;
     const newObject = {};
     const key = Object.keys(obj);
     for (const item of key) {
@@ -207,17 +208,112 @@ console.log(updateObject({ a: 1, b: 2, c: 3 }, 'b', 'a'));
 // //const reversedArray = reverseArray(arrNumber);
 // console.log(reverseArray([11, 9, 2, 1]));
 
-function reverseArray(arr) {
-  const reversed = [];
+// function reverseArray(arr) {
+//   const reversed = [];
   
-  for (let i = arr.length - 1; i >= 0; i--) {
-    reversed.push(arr[i]);
-  }
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     reversed.push(arr[i]);
+//   }
   
-  return reversed;
-}
+//   return reversed;
+// }
 
-console.log(reverseArray([11, 9, 2, 1])); 
+// console.log(reverseArray([11, 9, 2, 1])); 
+
+// const calculateTotalPrice = orderedItems => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach((item )=> {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// };
+// console.log(calculateTotalPrice([11, 85, 37, 4]));
+
+
+// function changeEven(numbers, value) {
+//   const newArr = [];
+//   numbers.forEach((item) => {
+//     if (item % 2 === 0) {
+//       newArr.push(item + value);
+//     }
+//   });
+//   return newArr;
+// }
+
+// function changeEven(numbers, value) {
+//   const newArr = numbers.map(item => {
+//     if (item % 2 === 0) {
+//       return item + value;
+//     }
+//     return item;
+//   });
+//   return newArr;
+// }
+
+// function changeEven(numbers, value) {
+//   const newArr = [];
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0) {
+//       newArr.push(numbers[i] + value);
+//     } else {
+//       newArr.push(numbers[i]);
+//     }
+//   }
+//   return newArr;
+// }
+
+
+// function changeEven(numbers, value) {
+//   const newArr = [];
+//   numbers.forEach((item) => {
+//     if (item % 2 === 0) {
+//       newArr.push(item + value);
+//     } else {
+//       newArr.push(item);
+//     }
+//   });
+//   return newArr;
+// }
+
+// const changeEven = (numbers, value) => {
+//   const newArr = [];
+//   numbers.forEach((item) => {
+//     if (item % 2 === 0) {
+//       newArr.push(item + value);
+//     } else {
+//       newArr.push(item);
+//     }
+//   });
+//   return newArr;
+//}
+// console.log(changeEven([17, 24, 68, 31, 42], 100));
+
+// const planetsLengths = planets.map(item => planets.length);
+// console.log(planetsLengths);
+
+
+
+// const users = [
+//   { name: 'John', email: 'john@example.com' },
+//   { name: 'Alice', email: 'lice@example.com' }
+// ];
+// const getUserEmails = (users) => {
+//   return users.map(user => user.email);
+// };
+
+// const userEmails = getUserEmails(users);
+// console.log(userEmails);
+
+const objB = {
+	b: "objB prop"
+};
+
+const objA = Object.create(objB);
+objA.a = "objA prop";
+
+console.log(objA);
 
 
 
