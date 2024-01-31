@@ -179,29 +179,29 @@
 //     в якому буде зберігатися об"єкт з пріоритетами
 //     Додай методи addNote(note), removeNote(text), updatePriority(text, newPriority)
 
-class Notes {
-  static Priority() {
-    return {HIGHT:"hight", LOW:"low"}
-  }
-  constructor() {
-    this.items = [];
-  }
-  addNote(note) {
-    this.items.push(note);
-  }
-  removeNote(text) {
-    this.items = this.items.filter(item => item.text !== text);
-  }
-  updatePriority(text, newPriority) {
-    const index = this.items.findIndex(item => item.text === text);
-    if (index !== -1) {
-      this.items[index].priority = newPriority;
-    }
-  }
-} 
-const note1 = new Notes();
-note1.addNote({ text: "Task-1", priority: Notes.Priority().HIGHT })
-note1.addNote({ text: "Task-2", priority: Notes.Priority().HIGHT })
-note1.updatePriority("Task-1", Notes.Priority().LOW)
-note1.removeNote("Task-2")
-console.log(note1);
+// class Notes {
+//   static Priority() {
+//     return {HIGHT:"hight", LOW:"low"}
+//   }
+//   constructor() {
+//     this.items = [];
+//   }
+//   addNote(note) {
+//     this.items.push(note);
+//   }
+//   removeNote(text) {
+//     this.items = this.items.filter(item => item.text !== text);
+//   }
+//   updatePriority(text, newPriority) {
+//     const index = this.items.findIndex(item => item.text === text);
+//     if (index !== -1) {
+//       this.items[index].priority = newPriority;
+//     }
+//   }
+// } 
+// const note1 = new Notes();
+// note1.addNote({ text: "Task-1", priority: Notes.Priority().HIGHT })
+// note1.addNote({ text: "Task-2", priority: Notes.Priority().HIGHT })
+// note1.updatePriority("Task-1", Notes.Priority().LOW)
+// note1.removeNote("Task-2")
+// console.log(note1);
