@@ -12,6 +12,56 @@
     <div>Текстовый блок 1</div>
     <div>Текстовый блок 2</div>
     <div>Текстовый блок 3</div>
+
+    <input type="text" id="datetime-picker" />
+    <button type="button" data-start>Start</button>
+
+    <div class="timer">
+        <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+        </div>
+        <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+        </div>
+        <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Минуты</span>
+        </div>
+        <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+        </div>
+    </div>
+
+    <script>
+
+
+
+
+    </script>
+
+    <script>
+
+        const isSuccess = true;
+
+        const promise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (isSuccess) {
+                    resolve("Success! Value passed to resolve function");
+                } else {
+                    reject("Error! Error passed to reject function");
+                }
+            }, 2000);
+        });
+
+        console.log(promise); //Объект промиса
+
+
+
+
+    </script>
     <script src="./2myjs.js"></script>
 </body>
 
